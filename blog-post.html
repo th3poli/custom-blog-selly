@@ -1,0 +1,90 @@
+
+<style>
+
+    .custom-blog-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .custom-blog-row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .custom-blog-text {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .custom-blog-image {
+        flex: 1;
+        padding: 10px;
+    }
+
+    .custom-blog-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    @media (max-width: 768px) {
+        .custom-blog-row {
+            flex-direction: column;
+        }
+
+        .custom-blog-image {
+            order: -1;
+        }
+    }
+</style>
+
+<div class="custom-blog-container">
+
+    <!-- Pierwszy wiersz: Tekst po lewej, obraz po prawej -->
+    <div class="custom-blog-row">
+        <div class="custom-blog-text">
+            <h2>Wprowadzenie</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Praesent non luctus nulla. In accumsan libero vel arcu
+                fermentum, nec vehicula lorem condimentum.
+            </p>
+        </div>
+        <div class="custom-blog-image">
+            <img src="" alt="Opis zdjęcia">
+        </div>
+    </div>
+
+    <!-- Drugi wiersz: Obraz po lewej, tekst po prawej -->
+    <div class="custom-blog-row">
+        <div class="custom-blog-image">
+            <img src="" alt="Opis zdjęcia">
+        </div>
+        <div class="custom-blog-text">
+            <h2>Rozwinięcie</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+                vehicula, erat vitae fringilla tempus, nisl libero mollis nulla,
+                ut tincidunt purus velit nec magna.
+            </p>
+        </div>
+    </div>
+
+    <!-- Trzeci wiersz: Tekst po lewej, obraz po prawej -->
+    <div class="custom-blog-row">
+        <div class="custom-blog-text">
+            <h2>Podsumowanie</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non
+                risus et elit elementum suscipit. Integer vitae dolor velit.
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae.
+            </p>
+        </div>
+        <div class="custom-blog-image">
+            <img src="" alt="Opis zdjęcia">
+        </div>
+    </div>
+</div>
